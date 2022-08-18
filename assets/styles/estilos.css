@@ -1,6 +1,6 @@
 .banner{
     background-image: url("../img/16050829163655.jpg");
-    padding: 15% 30% 30% 10%;
+    padding: 15% 5% 30% 10%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -22,4 +22,64 @@
 
 .fuente{
     font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.contenedor1{
+    height: 250px;
+    width: 910px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-image: url(img/olas.webp);
+}
+
+.contenedor2{
+    height: 150px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 10px;
+    font-weight: 10px;
+}
+
+.social1{
+    border: solid black;
+    height: 40px;
+    width: 40px;
+    background-image: url(img/facebook.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social2{
+    border: solid black;
+    height: 40px;
+    width: 40px;
+    background-image: url(img/HD-wallpaper-instagram-black-logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social3{
+    border: solid black;
+    height: 40px;
+    width: 40px;
+    background-image: url(img/wha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
