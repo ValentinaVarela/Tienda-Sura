@@ -40,7 +40,6 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
-    background-image: url(img/olas.webp);
 }
 
 .contenedor2{
@@ -55,16 +54,18 @@
 }
 
 .social1{
+    margin: 2% auto;
     height: 40px;
     width: 40px;
     background-image: url(https://thumbs.dreamstime.com/b/icono-del-logo-de-facebook-voronezh-rusia-noviembre-cuadrado-en-color-azul-164585769.jpg);
-    background-size: cover;
+    background-size:cover ;
     background-repeat: no-repeat;
     background-position: center ;
     
 }
 
 .social2{
+    margin: 2% auto ;
     height: 40px;
     width: 40px;
     background-image: url(https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/cd939-logo-instagram-png.png?fit=512%2C512&ssl=1);
@@ -74,6 +75,7 @@
 }
 
 .social3{
+    margin: 2% auto;
     height: 40px;
     width: 40px;
     background-image: url(https://1000marcas.net/wp-content/uploads/2019/11/WhatsApp-logo.png);
