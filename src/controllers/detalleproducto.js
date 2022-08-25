@@ -28,6 +28,22 @@ precio.textContent=product.precio
 
 let descripcion=document.getElementById("descriptionInfo")
 descripcion.textContent=product.descripcion
+    
+  //Creating a popularity
+  let popularidad = document.getElementById("popularityInfo");
+  popularidad.classList.add("d-none");
+  popularidad.textContent = product.popularidad;
+
+  //Creating a stars
+  let contendorstars = document.getElementById("containerstars");
+  for (let i = 1; i <= product.popularidad; i++) {
+    let stars = document.createElement("i");
+    stars.classList.add("bi", "bi-star-fill", "text-warning");
+    contendorstars.appendChild(stars);
+  }
+
+
+
 
 let pildora=document.getElementById("pildora")
 console.log(pildora.textContent)
