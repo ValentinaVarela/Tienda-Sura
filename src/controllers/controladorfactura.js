@@ -1,5 +1,7 @@
 let carrito=JSON.parse(localStorage.getItem("carrito"))
 let totalcompra=document.getElementById("totalCompra")
+let total=0
+let bandera=true
 
 //
 let factura=document.getElementById("factura")
@@ -43,7 +45,7 @@ if(carrito==null){
         columna2.classList.add("col-12", "col-md-3", "border-end", "align-self-center")
 
         let columna3=document.createElement("div")
-        columna3.textContent="subtotal"
+        columna3.textContent="Subtotal"
         columna3.classList.add("col-12", "col-md-3", "align-self-center", "fs-1", "text-center")
 
         let foto=document.createElement("img")
@@ -66,7 +68,10 @@ if(carrito==null){
         Subtotal.classList.add("fw-bold", "text-center", "bg-dark", "text-white")
 
         let subtotalcalculado=producto.precio.split("$")[1]*producto.cantidad
-        Subtotal.textContent="$"+subtotalcalculado
+        Subtotal.textContent="US "+subtotalcalculado
+
+        total=subtotalcalculado+total
+        totalcompra.textContent="US "+total
 
         let botonlimpiar=document.getElementById("botonLimpiar")
         botonlimpiar.addEventListener("click",function(evento){
@@ -94,3 +99,31 @@ if(carrito==null){
 
 }
 
+totalcompra.textContent = "US$ " + total
+
+ let conversor= document.getElementById("Convertir") 
+ conversor.classList.add("btn", "btn-dark")
+ conversor.textContent="Convert to COP"
+
+ conversor.addEventListener("click", function(){
+   let COP = 4300
+   let operacion = 0
+   operacion = "COP " + total * (COP/1)
+   totalcompra.textContent = operacion
+   conversor.textContent= "Convert to USD"
+
+   if (bandera == true) {
+    conversor.addEventListener("click", function(){
+        totalcompra.textContent = "US$ " + total
+    })
+    bandera = !bandera
+   } else {
+    conversor.addEventListener("click", function(){
+        totalcompra.textContent = operacion
+      
+    })
+    bandera = !bandera
+    
+   }
+
+ })

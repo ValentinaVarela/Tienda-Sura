@@ -21,27 +21,30 @@
 
   <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="d-flex">
-          <li class="">
-            <a class="navbar-brand" href="./src/views/tienda.html">Our store<i class="bi bi-shop"></i></a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="">
-            <a class="navbar-brand" href="#" id="Usuario">Usuario</a>
-          </li>
-          <li>
-            <a class="text-white" href="index.html" id="botonsalir">
-              <i class="bi bi-box-arrow-left ms-auto"></i>Salir</a>
-          </li>
-        </ul>
-        
-        </button>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark animate_animated animate_rubberBand">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./src/views/tienda.html">Our Store <i class="bi bi-shop"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="">
+              <a class="navbar-brand" href="./src/views/login.html" id="Login">Log in  
+                <i class="bi bi-box-arrow-in-right"></i></a>
+            </li>
+              <ul class="navbar-nav ms-auto">
+                <li class="">
+                  <a class="navbar-brand" href="#" id="Usuario">User</a>
+                </li>
+                <li>
+                  <a class="navbar-brand" href="index.html" id="botonsalir">  Leave  <i class="bi bi-box-arrow-left ms-auto"></i></a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+
   </header>
   <main>
     <section class="banner text-white">
@@ -130,6 +133,9 @@
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">CLOTHING STORE MEDELLIN <i class="bi bi-shop-window"></i></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Registration</h5>
+        </div>
         <div class="offcanvas-body">
           <form id="Formulario">
             <div class="mb-3">
@@ -141,7 +147,32 @@
               <input type="password" class="form-control" id="Password">
             </div>
             <button type="submit" class="btn btn-primary" id="botonregistro">Sign up</button>
+            <p>You Already Have An Account <a href="" data-bs-toggle="offcanvas" data-bs-target="#canvasLogin">Get Into</a></p>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="canvasLogin" aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(223, 179, 187);">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">         
+          <div>            
+            <form id="formulario"> 
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" id="correo">  
+              </div>             
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="Password" class="form-control" id="Password">
+              </div>
+              <button type="submit" class="btn btn-primary" id="botonRegistro"> <i class="bi bi-alipay"> Sing Up</i></button>             
+            </form>
+          </div>
         </div>
       </div>
     </section>
